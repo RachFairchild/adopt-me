@@ -1,0 +1,45 @@
+
+
+body {
+    padding: 2rem;
+}
+
+/* Fallback layout */
+main {
+    max-width: 500px;
+    margin: 0 auto;
+}
+article {
+    margin: 1rem 0;
+}
+
+/*Setting up CSS Grid and Flexbox*/
+
+ /*Feature query for the intended layout*/
+@supports (display:grid) {
+    /*Undoing fallback layout*/
+    main {
+        max-width: none;
+        margin: 0;
+    }
+    article {
+        margin: 0;
+    }
+
+   /*Set grid layout in main (around adoptee cards)*/
+   main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+   } 
+}
+
+ /*Create Flexbox within each adoptee card*/
+    article {
+        display: flex;
+        flex-flow: column;
+    }
+    article > img {
+        order: -1;
+        align-self: center;
+    }
