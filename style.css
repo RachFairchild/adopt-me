@@ -34,7 +34,7 @@ article {
    } 
 }
 
- /*Create Flexbox within each adoptee card*/
+/*Create Flexbox within each adoptee card*/
     article {
         display: flex;
         flex-flow: column;
@@ -43,3 +43,23 @@ article {
         order: -1;
         align-self: center;
     }
+
+/*Aesthetic spacing*/
+article {
+
+}
+article > h1 {
+
+}
+article > ul {
+
+}
+article > p {
+
+}
+
+/*Visual styling, buttons*/
+article > img {
+    width: 300px;
+    object-fit: cover;
+}
