@@ -51,6 +51,9 @@ article {
     }
     article > img {
         order: -1;
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
         align-self: center;
     }
 
@@ -64,7 +67,6 @@ article {
         margin-left: auto;
         margin-right: auto; */
         display: grid;
-        margin-bottom: ;
         position: absolute;
         top: 0;
         left: 0;
@@ -82,7 +84,7 @@ article > ul {
 
 }
 article > p {
-
+    font-size: 15px;
 }
 
 /*Visual styling, buttons*/
@@ -135,6 +137,7 @@ article > h1 {
 }
 
 article > button {
+    align-items: monroe2;
     background-color: #6504B5;
     color: white;
     font-weight: bold;
